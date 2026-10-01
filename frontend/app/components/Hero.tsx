@@ -11,7 +11,7 @@ export default function Hero() {
     const timer = setTimeout(() => {
       revealRef.current.forEach((el, i) => {
         if (el) {
-          setTimeout(() => el.classList.add("in"), i * 100);
+          setTimeout(() => el.classList.add("in"), i * 200);
         }
       });
     }, 100);
@@ -31,24 +31,24 @@ export default function Hero() {
       <div className="wrap hero-grid">
         {/* Copy */}
         <div className="hero-copy">
-          <div ref={addReveal} className="reveal">
+          <div ref={addReveal} className="hero-reveal">
             <a className="hero-badge" href="#studio">
               <span className="dot" />
               New · EsportsCalc Studio is here →
             </a>
           </div>
 
-          <div ref={addReveal} className="reveal">
+          <div ref={addReveal} className="hero-reveal">
             <h1>
               Drop screens.
               <br />
-              <span className="em">Get the</span>
+              <span className="em" data-text="Get the">Get the</span>
               <br />
-              <span className="stroke">whole kit.</span>
+              <span className="stroke" data-text="whole kit.">whole kit.</span>
             </h1>
           </div>
 
-          <div ref={addReveal} className="reveal">
+          <div ref={addReveal} className="hero-reveal">
             <p className="hero-sub">
               The AI tournament toolkit for BGMI, PUBG Mobile &amp; Free Fire
               organizers. Upload your lobby and result screens — placements and
@@ -58,7 +58,7 @@ export default function Hero() {
             </p>
           </div>
 
-          <div ref={addReveal} className="reveal">
+          <div ref={addReveal} className="hero-reveal">
             <div className="hero-actions">
               <a href="#dashboard" className="btn btn-acid">
                 Launch App — It&apos;s Free
@@ -69,7 +69,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div ref={addReveal} className="reveal">
+          <div ref={addReveal} className="hero-reveal">
             <div className="hero-stats">
               <div className="hero-stat">
                 <strong>
@@ -96,7 +96,7 @@ export default function Hero() {
         </div>
 
         {/* Visual */}
-        <div ref={addReveal} className="hero-visual reveal">
+        <div ref={addReveal} className="hero-visual hero-reveal">
           <div className="hero-glow" aria-hidden="true" />
           <div className="hero-img-wrap">
             <Image

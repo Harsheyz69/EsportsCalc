@@ -125,10 +125,11 @@ h1, h2, h3, h4 {
 
 h1 {
   font-family: var(--font-display);
-  font-size: clamp(48px, 8vw, 96px);
-  line-height: 1;
-  letter-spacing: -0.01em;
-  font-weight: 600; text-transform: uppercase;
+  font-size: clamp(64px, 11vw, 130px);
+  line-height: 0.85;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -150,12 +151,46 @@ h3 {
 }
 
 .em {
+  position: relative;
   color: var(--acid);
+  display: inline-block;
+}
+.em::before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  color: #fff;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.3s;
+}
+.hero-reveal.in .em::before {
+  animation: glitch-anim 2s infinite linear alternate-reverse;
 }
 
 .stroke {
   -webkit-text-stroke: 2px var(--acid);
   color: transparent;
+  position: relative;
+  display: inline-block;
+}
+.stroke::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  -webkit-text-stroke: 1px rgba(255, 70, 85, 0.4);
+  color: transparent;
+  z-index: -1;
+}
+
+@keyframes glitch-anim {
+  0% { opacity: 1; transform: translate(0) }
+  10% { transform: translate(-2px, 2px) }
+  20% { transform: translate(-2px, -2px) }
+  30% { opacity: 0; }
+  100% { opacity: 0; }
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -1314,6 +1349,19 @@ footer {
 .reveal.in {
   opacity: 1;
   transform: none;
+}
+
+.hero-reveal {
+  opacity: 0;
+  transform: translateX(-40px) skewX(-5deg);
+  filter: blur(4px);
+  transition: opacity 0.8s ease-out, transform 1s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s ease-out;
+}
+
+.hero-reveal.in {
+  opacity: 1;
+  transform: none;
+  filter: blur(0);
 }
 
 /* ═══════════════════════════════════════════════════════════
