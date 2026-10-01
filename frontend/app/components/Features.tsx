@@ -232,7 +232,7 @@ export default function Features() {
             <span className="feat-tag">Broadcast</span>
             <h3>Slot list &amp; team posters</h3>
             <p>
-              Add your teams, players and logos — PointCalc turns it into a
+              Add your teams, players and logos — EsportsCalc turns it into a
               broadcast-grade slot list and posters for every squad.
             </p>
             <div

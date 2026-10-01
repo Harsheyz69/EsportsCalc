@@ -43,13 +43,13 @@ export default function Nav() {
           onClick={(e) => handleAnchor(e, "#top")}
         >
           <Image
-            src="/logo-icon.jpg"
-            alt="PointCalc"
+            src="/esportscalc-logo.jpg"
+            alt="EsportsCalc"
             width={32}
             height={32}
             style={{ borderRadius: 6 }}
           />
-          PointCalc
+          EsportsCalc
         </a>
 
         {/* Desktop nav */}

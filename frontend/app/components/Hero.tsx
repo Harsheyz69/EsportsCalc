@@ -34,7 +34,7 @@ export default function Hero() {
           <div ref={addReveal} className="reveal">
             <a className="hero-badge" href="#studio">
               <span className="dot" />
-              New · PointCalc Studio is here →
+              New · EsportsCalc Studio is here →
             </a>
           </div>
 
@@ -52,7 +52,7 @@ export default function Hero() {
             <p className="hero-sub">
               The AI tournament toolkit for BGMI, PUBG Mobile &amp; Free Fire
               organizers. Upload your lobby and result screens — placements and
-              kills are read automatically, then PointCalc builds the points
+              kills are read automatically, then EsportsCalc builds the points
               table, warhead, top fraggers, slot list, posters and certificates
               for you.
             </p>
@@ -100,8 +100,8 @@ export default function Hero() {
           <div className="hero-glow" aria-hidden="true" />
           <div className="hero-img-wrap">
             <Image
-              src="/hero-dashboard.jpg"
-              alt="PointCalc tournament dashboard showing points table, warhead, and top fraggers"
+              src="/esportscalc-dashboard.jpg"
+              alt="EsportsCalc tournament dashboard showing points table, warhead, and top fraggers"
               width={680}
               height={383}
               priority

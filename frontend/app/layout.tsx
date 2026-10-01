@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "PointCalc — AI Tournament Toolkit for BGMI, PUBG & Free Fire",
+  title: "EsportsCalc — AI Tournament Toolkit for BGMI, PUBG & Free Fire",
   description:
     "AI-powered tournament toolkit for BGMI, PUBG Mobile & Free Fire organizers. Drop screenshots — get the points table, warhead, top fraggers, slot list and certificates in seconds.",
   keywords: [
@@ -18,15 +18,15 @@ export const metadata: Metadata = {
     "AI OCR",
   ],
   openGraph: {
-    title: "PointCalc — AI Tournament Toolkit for BGMI, PUBG & Free Fire",
+    title: "EsportsCalc — AI Tournament Toolkit for BGMI, PUBG & Free Fire",
     description:
       "AI-powered tournament toolkit for BGMI, PUBG Mobile & Free Fire organizers. Drop screenshots — get the points table, warhead, top fraggers, slot list and certificates in seconds.",
     type: "website",
-    siteName: "PointCalc",
+    siteName: "EsportsCalc",
   },
   twitter: {
     card: "summary_large_image",
-    title: "PointCalc — AI Tournament Toolkit",
+    title: "EsportsCalc — AI Tournament Toolkit",
     description:
       "Drop screenshots — get the whole tournament kit in seconds.",
   },
@@ -40,7 +40,13 @@ export default function RootLayout({
   return (
     <html lang="en" dir="ltr">
       <head>
-        <meta name="theme-color" content="#08080b" />
+        <meta name="theme-color" content="#060b19" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet"
+      />
       </head>
       <body>{children}</body>
     </html>

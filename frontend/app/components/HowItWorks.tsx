@@ -9,7 +9,7 @@ const STEPS = [
     icon: Upload,
     kicker: "Step 01",
     title: "Upload your screens",
-    desc: "Drop your lobby and result screenshots from BGMI, PUBG Mobile or Free Fire. That's the only input PointCalc needs — multi-game support out of the box.",
+    desc: "Drop your lobby and result screenshots from BGMI, PUBG Mobile or Free Fire. That's the only input EsportsCalc needs — multi-game support out of the box.",
     className: "step s1",
   },
   {
@@ -17,7 +17,7 @@ const STEPS = [
     icon: ScanLine,
     kicker: "Step 02",
     title: "AI extracts the data",
-    desc: "Placements and kills are read straight off the screens. PointCalc derives the full picture — points table, warhead and top fraggers. Edit any value if you need to.",
+    desc: "Placements and kills are read straight off the screens. EsportsCalc derives the full picture — points table, warhead and top fraggers. Edit any value if you need to.",
     className: "step s2",
   },
   {
@@ -61,7 +61,7 @@ export default function HowItWorks() {
           <h2>Three steps to a published kit</h2>
           <p style={{ color: "var(--text-2)", marginTop: 12, maxWidth: 560 }}>
             No spreadsheets. No copy-pasting from screenshots. No Photoshop.
-            PointCalc handles the whole chain — from raw screens to a finished,
+            EsportsCalc handles the whole chain — from raw screens to a finished,
             broadcast-grade tournament kit.
           </p>
         </div>
