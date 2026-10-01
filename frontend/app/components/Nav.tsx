@@ -94,44 +94,22 @@ export default function Nav() {
         </button>
       </div>
 
-      {/* Mobile menu overlay */}
+      {/* Mobile drawer */}
       {open && (
-        <div
-          style={{
-            position: "fixed",
-            inset: "var(--nav-h) 0 0",
-            background: "rgba(8,8,11,0.96)",
-            backdropFilter: "blur(16px)",
-            zIndex: 99,
-            display: "flex",
-            flexDirection: "column",
-            padding: "32px 24px",
-            gap: "8px",
-            borderTop: "1px solid var(--border)",
-          }}
-        >
+        <div className="nav-mobile-drawer">
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={(e) => handleAnchor(e, link.href)}
-              style={{
-                padding: "14px 16px",
-                fontSize: "16px",
-                fontWeight: 600,
-                color: "var(--text-2)",
-                textDecoration: "none",
-                borderRadius: "var(--r-sm)",
-                background: "var(--surface)",
-              }}
             >
               {link.label}
             </a>
           ))}
           <a
-            href="#dashboard"
             className="btn btn-acid"
-            style={{ marginTop: 16, justifyContent: "center" }}
+            href="#dashboard"
+            style={{ width: "100%", justifyContent: "center", marginTop: 8 }}
             onClick={() => setOpen(false)}
           >
             Launch App →

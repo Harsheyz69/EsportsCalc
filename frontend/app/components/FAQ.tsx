@@ -70,7 +70,7 @@ export default function FAQ() {
                 aria-expanded={openIdx === i}
               >
                 {faq.q}
-                <span className="faq-ic">{openIdx === i ? "−" : "+"}</span>
+                <span className="faq-ic">+</span>
               </button>
               {openIdx === i && (
                 <div className="faq-a">

@@ -88,17 +88,11 @@ export default function HowItWorks() {
           style={{
             marginTop: 32,
             color: "var(--text-3)",
-            fontSize: 14,
+            fontSize: 13,
             textAlign: "center",
           }}
         >
-          Want the full walkthrough?{" "}
-          <a
-            href="#faq"
-            style={{ color: "var(--acid)", textDecoration: "none" }}
-          >
-            Read the step-by-step guide →
-          </a>
+          Average kit turnaround: <strong style={{ color: "var(--acid)" }}>under 20 seconds</strong> from screenshot to broadcast graphic.
         </p>
       </div>
     </section>
