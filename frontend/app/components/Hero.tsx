@@ -27,6 +27,7 @@ export default function Hero() {
       {/* Background gradients */}
       <div className="hero-bg" aria-hidden="true" />
       <div className="hero-grid-lines" aria-hidden="true" />
+      <div className="hero-holo-text" aria-hidden="true">ESPORTS</div>
 
       <div className="wrap hero-grid">
         {/* Copy */}
@@ -93,36 +94,6 @@ export default function Hero() {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Visual */}
-        <div ref={addReveal} className="hero-visual hero-reveal">
-          <div className="hero-glow" aria-hidden="true" />
-          <div className="hero-img-wrap">
-            <Image
-              src="/esportscalc-dashboard.jpg"
-              alt="EsportsCalc tournament dashboard showing points table, warhead, and top fraggers"
-              width={680}
-              height={383}
-              priority
-              quality={90}
-            />
-          </div>
-          <div className="hero-chip c1">
-            <span
-              style={{
-                width: 6,
-                height: 6,
-                borderRadius: "50%",
-                background: "var(--acid)",
-                display: "inline-block",
-                flexShrink: 0,
-                animation: "pulse-dot 2s ease-in-out infinite",
-              }}
-            />
-            AI reading screens…
-          </div>
-          <div className="hero-chip c2">✓ Kit generated · 0:03</div>
         </div>
       </div>
     </section>
