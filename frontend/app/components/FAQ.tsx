@@ -57,12 +57,11 @@ export default function FAQ() {
           <h2>Common questions</h2>
         </div>
 
-        <div className="faq-list" id="faqList">
+        <div className="faq-list reveal" id="faqList">
           {FAQS.map((faq, i) => (
             <div
               key={i}
-              className={`faq-item reveal${openIdx === i ? " open" : ""}`}
-              style={{ transitionDelay: `${i * 40}ms` }}
+              className={`faq-item${openIdx === i ? " open" : ""}`}
             >
               <button
                 className="faq-q"
