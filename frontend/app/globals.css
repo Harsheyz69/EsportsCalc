@@ -686,18 +686,18 @@ h3 {
 }
 
 .feat {
-  background: var(--bg-2);
-  border: 1px solid var(--border);
-  border-radius: var(--r-lg);
-  padding: 32px;
+  background: transparent;
+  border: none;
+  border-left: 2px solid var(--border-2);
+  border-radius: 0;
+  padding: 16px 32px;
   position: relative;
   overflow: hidden;
   transition: border-color 0.3s, transform 0.2s;
 }
 
 .feat:hover {
-  border-color: var(--border-2);
-  transform: translateY(-3px);
+  transform: translateX(6px);
 }
 
 .feat.big {
@@ -713,6 +713,12 @@ h3 {
   grid-column: span 1;
 }
 
+/* Color highlights on hover */
+.feat:hover { border-color: var(--acid); }
+.feat.a-blue:hover { border-color: #60a5fa; }
+.feat.a-heat:hover { border-color: #f87171; }
+.feat.a-gold:hover { border-color: var(--gold); }
+
 .feat-tag {
   display: inline-block;
   padding: 4px 10px;
@@ -724,10 +730,10 @@ h3 {
   margin-bottom: 12px;
 }
 
-.feat.a-blue .feat-tag { background: rgba(236,232,225,0.15); color: #60a5fa; }
-.feat.a-heat .feat-tag { background: rgba(239,68,68,0.15); color: #f87171; }
-.feat.a-gold .feat-tag { background: rgba(139,151,143,0.15); color: var(--gold); }
-.feat .feat-tag { background: rgba(255,70,85,0.12); color: var(--acid); }
+.feat.a-blue .feat-tag { background: transparent; color: #60a5fa; border-left: 2px solid #60a5fa; padding-left: 8px; border-radius: 0; }
+.feat.a-heat .feat-tag { background: transparent; color: #f87171; border-left: 2px solid #f87171; padding-left: 8px; border-radius: 0; }
+.feat.a-gold .feat-tag { background: transparent; color: var(--gold); border-left: 2px solid var(--gold); padding-left: 8px; border-radius: 0; }
+.feat .feat-tag { background: transparent; color: var(--acid); border-left: 2px solid var(--acid); padding-left: 8px; border-radius: 0; }
 
 .feat h3 {
   margin-bottom: 10px;

@@ -65,31 +65,6 @@ export default function Features() {
                   gap: 8,
                 }}
               >
-                {["OpenCV preprocessing", "PaddleOCR / EasyOCR", "Gemini Flash fallback"].map(
-                  (item) => (
-                    <div
-                      key={item}
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        gap: 10,
-                        fontSize: 13,
-                        color: "var(--text-3)",
-                      }}
-                    >
-                      <span
-                        style={{
-                          width: 6,
-                          height: 6,
-                          borderRadius: "50%",
-                          background: "var(--acid)",
-                          flexShrink: 0,
-                        }}
-                      />
-                      {item}
-                    </div>
-                  )
-                )}
               </div>
             </div>
 
@@ -129,7 +104,7 @@ export default function Features() {
 
           {/* Daily points tables */}
           <div className="feat third a-blue reveal">
-            <span className="feat-tag" style={{ background: "rgba(59,130,246,0.15)", color: "#60a5fa" }}>
+            <span className="feat-tag">
               Live
             </span>
             <h3>Daily points tables</h3>
@@ -160,7 +135,7 @@ export default function Features() {
 
           {/* Top Fraggers */}
           <div className="feat third a-heat reveal">
-            <span className="feat-tag" style={{ background: "rgba(239,68,68,0.15)", color: "#f87171" }}>
+            <span className="feat-tag">
               Stat cards
             </span>
             <h3>Top fraggers &amp; warhead</h3>
@@ -171,10 +146,9 @@ export default function Features() {
             <div
               style={{
                 marginTop: 20,
-                padding: "16px",
-                background: "var(--surface)",
-                borderRadius: "var(--r-md)",
-                border: "1px solid rgba(239,68,68,0.2)",
+                padding: "8px 0 8px 16px",
+                background: "transparent",
+                borderLeft: "2px solid #f87171",
                 display: "flex",
                 alignItems: "center",
                 gap: 14,
@@ -247,13 +221,12 @@ export default function Features() {
                 <div
                   key={i}
                   style={{
-                    padding: "8px 12px",
-                    background: "var(--surface)",
-                    borderRadius: "var(--r-sm)",
+                    padding: "4px 0 4px 12px",
+                    background: "transparent",
                     fontSize: 13,
                     fontFamily: "var(--font-mono)",
-                    color: "var(--text-2)",
-                    border: "1px solid var(--border)",
+                    color: "var(--text)",
+                    borderLeft: "2px solid var(--acid)",
                   }}
                 >
                   {item}
@@ -264,7 +237,7 @@ export default function Features() {
 
           {/* Certificates */}
           <div className="feat third a-gold reveal">
-            <span className="feat-tag" style={{ background: "rgba(245,158,11,0.15)", color: "var(--gold)" }}>
+            <span className="feat-tag">
               No Photoshop
             </span>
             <h3>Winner certificates</h3>
@@ -275,11 +248,10 @@ export default function Features() {
             <div
               style={{
                 marginTop: 20,
-                padding: 16,
-                background: "rgba(245,158,11,0.06)",
-                border: "1px solid rgba(245,158,11,0.2)",
-                borderRadius: "var(--r-md)",
-                textAlign: "center",
+                padding: "8px 0 8px 16px",
+                background: "transparent",
+                borderLeft: "2px solid var(--gold)",
+                textAlign: "left",
               }}
             >
               <div style={{ fontSize: 28, marginBottom: 4 }}>🏆</div>

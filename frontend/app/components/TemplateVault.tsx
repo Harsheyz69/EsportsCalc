@@ -135,7 +135,7 @@ export default function TemplateVault() {
           paddingBlock: 16,
         }}
       >
-        <span style={{ color: "var(--text)", WebkitTextStroke: 0 }}>190+</span>{" "}
+        <span style={{ color: "var(--text)", WebkitTextStroke: 0 }}>200+</span>{" "}
         designs
       </div>
 
@@ -158,7 +158,7 @@ export default function TemplateVault() {
 
       <div className="vault-cta reveal">
         <a className="btn btn-acid" href="#dashboard">
-          Browse all 190+ templates →
+          Browse all 200+ templates →
         </a>
         <p className="vault-note">Free packs included · Premium drops monthly</p>
       </div>
