@@ -126,7 +126,7 @@ h1, h2, h3, h4 {
 h1 {
   font-family: var(--font-display);
   font-size: clamp(64px, 11vw, 130px);
-  line-height: 1.0;
+  line-height: 0.9;
   letter-spacing: 0.02em;
   font-weight: 700;
   text-transform: uppercase;
@@ -387,11 +387,10 @@ h3 {
 }
 
 .hero-grid {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
   align-items: center;
-  text-align: center;
   padding-block: clamp(48px, 8vh, 80px);
   position: relative;
   z-index: 2;
@@ -401,7 +400,7 @@ h3 {
 .hero-copy {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 24px;
 }
 
@@ -450,14 +449,14 @@ h3 {
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 12px;
   align-items: center;
 }
 
 .hero-stats {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 32px;
   padding-top: 8px;
   border-top: 1px solid var(--border);
@@ -861,16 +860,38 @@ h3 {
 }
 
 .vault-rows {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
   overflow: hidden;
   margin-inline: -40px;
-  padding-block: 16px;
 }
 
 .vault-mqrow {
+  position: absolute;
+  width: 110vw;
+  left: 50%;
+  top: 50%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 24px 0;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.9);
   overflow: hidden;
+  display: flex;
+}
+
+.vault-mqrow:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(6deg);
+  z-index: 1;
+}
+
+.vault-mqrow.rev {
+  transform: translate(-50%, -50%) rotate(-6deg);
+  z-index: 2;
 }
 
 .vault-track {
