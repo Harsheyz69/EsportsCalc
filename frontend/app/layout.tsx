@@ -40,6 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en" dir="ltr">
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -48,7 +49,21 @@ export default function RootLayout({
         rel="stylesheet"
       />
       </head>
-      <body>{children}</body>
+      <body>
+        <div className="bg-characters">
+          <img
+            className="bg-char bg-char-left"
+            src="/Pose_Awaken Kelly Left_03.png"
+            alt=""
+          />
+          <img
+            className="bg-char bg-char-right"
+            src="/pubg-game-player-character-isolated-on-a-transparent-background-free-png.webp"
+            alt=""
+          />
+        </div>
+        {children}
+      </body>
     </html>
   );
 }

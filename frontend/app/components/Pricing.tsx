@@ -27,7 +27,7 @@ export default function Pricing() {
 
   useEffect(() => {
     const io = new IntersectionObserver(
-      (entries) => {
+      (entries) => { 
         entries.forEach((en) => {
           if (en.isIntersecting) {
             en.target.classList.add("in");
