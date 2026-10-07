@@ -94,6 +94,7 @@ body {
   overflow-x: hidden;
   max-width: 100vw;
   width: 100%;
+  position: relative;
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -105,7 +106,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: -2;
   pointer-events: none;
   overflow: hidden;
 }
@@ -376,6 +377,8 @@ h3 {
   align-items: center;
   padding-top: var(--nav-h);
   overflow: hidden;
+  background-color: var(--bg);
+  z-index: 1;
 }
 
 .hero-bg {
