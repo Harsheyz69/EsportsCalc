@@ -890,12 +890,14 @@ h3 {
 ═══════════════════════════════════════════════════════════ */
 .vault-big {
   font-family: var(--font-display);
-  font-size: clamp(64px, 12vw, 160px);
+  font-size: clamp(72px, 15vw, 220px);
   text-align: center;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(255,255,255,0.1);
+  -webkit-text-stroke: 1.5px rgba(255,255,255,0.45);
   line-height: 1;
   padding-block: 16px;
+  position: relative;
+  z-index: 1;
 }
 
 .vault-big .fill {
@@ -911,6 +913,14 @@ h3 {
   height: 400px;
   overflow: hidden;
   margin-inline: -40px;
+  margin-top: -95px;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .vault-rows {
+    margin-top: -45px;
+  }
 }
 
 .vault-mqrow {

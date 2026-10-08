@@ -124,19 +124,23 @@ export default function TemplateVault() {
       </div>
 
       <div
-        className="reveal"
+        className="vault-big reveal"
         style={{
           fontFamily: "var(--font-display)",
-          fontSize: "clamp(64px, 12vw, 160px)",
+          fontSize: "clamp(72px, 15vw, 220px)",
           textAlign: "center",
           color: "transparent",
-          WebkitTextStroke: "1px rgba(255,255,255,0.1)",
+          WebkitTextStroke: "1.5px rgba(255,255,255,0.45)",
           lineHeight: 1,
           paddingBlock: 16,
+          position: "relative",
+          zIndex: 1,
         }}
       >
         <span style={{ color: "var(--text)", WebkitTextStroke: 0 }}>200+</span>{" "}
-        designs
+        <span style={{ color: "rgba(255,255,255,0.12)", WebkitTextStroke: "1.5px rgba(255,255,255,0.45)" }}>
+          designs
+        </span>
       </div>
 
       <div className="vault-rows">
